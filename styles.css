@@ -1,169 +1,227 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* body general */
 body {
-    font-family: sans-serif;
-    color: #eee;
-    background-color: #111;
+  font-family: sans-serif;
+  color: #eee;
+  background-color: #111;
 }
 
-/* h1 / logo */
-
+/* h1-logo */
 h1 {
-    margin: 15px;
-    text-transform: uppercase;
-    text-align: center;
+  margin: 15px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-/* barra de navegacion general */
+/* contenido main */
+.contenido-main {
+  width: 100%;
+  height: 400px;
+  background: url(./assets/bg-m.webp) center/cover;
+}
+.contenido-main h2 {
+  text-align: center;
+  font-size: 64px;
+  padding: 100px 0 50px 0;
+  text-shadow: 2px 2px 5px #000;
+}
+.contenido-main p {
+  text-align: center;
+  font-size: 30px;
+  padding: 0 0 125px 0;
+  text-shadow: 2px 2px 2px #000;
+}
 
+@media (max-width: 450px) {
+  .contenido-main h2 {
+    font-size: 50px;
+  }
+  .contenido-main p {
+    font-size: 20px;
+  }
+}
+/* contenido barra de navegacion */
 .nav-icon {
-    color: #eee;
-    font-size: 32px;
-    border: #9e13ee 1px solid;
-    padding: 0 15px;
-    border-radius: 5px;
+  color: #eee;
+  font-size: 32px;
+  border: #9e13ee 1px solid;
+  padding: 0 15px;
+  border-radius: 5px;
 }
-
 .nav-icon:hover {
-    color: #eee;
-    background-color: #9e13ee;
+  color: #eee;
+  background-color: #9e13ee;
 }
 
 .nav-propio {
-    background-color: #111;
+  background-color: #111;
 }
-
 .nav-propio li a {
-    color: #9e13ee;
-    margin: 0 5px;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: #9e13ee;
+  margin: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-
 .nav-propio li a:hover {
-    color: #eee;
-    border: #eee 1px solid;
-    border-radius: 5px;
+  color: #eee;
+  border: #eee 1px solid;
+  border-radius: 5px;
 }
 
 .button-propio {
-    color: #eee;
-    border-color: #eee;
+  color: #eee;
+  border-color: #eee;
 }
-
 .button-propio:hover {
-    background-color: #9e13ee;
-    border-color: #251552;
-}
-/* contenido del inicio */
-
-.contenido-main {
-    width: 100%;
-    height: 400px;
-    background: url(./assets/bg-m.webp) center / cover;
-}
-
-.contenido-main h2 {
-    text-align: center;
-    font-size: 64px;
-    padding: 100px 0 50px 0;
-    text-shadow: 2px 2px 5px #000;
-}
-
-.contenido-main p {
-    text-align: center;
-    font-size: 30px;
-    padding: 0 0 125px 0;
-    text-shadow: 2px 2px 2px #000;
-}
-
-@media (max-width:450px) {
-    .contenido-main h2 {
-        font-size: 50px;
-    }
-    .contenido-main p {
-        font-size: 20px;
-    }
+  background-color: #9e13ee;
+  border-color: #251552;
 }
 
 /* contenido de productos */
 .h2-productos {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    margin: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 20px;
 }
 
 .subtitulos-categorias {
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-size: 20px;
-    margin-top: 30px;
-    padding: 10px;
-    text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
 }
 
 .nav-productos {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    border: #eee 1px solid;
-    border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  border: #eee 1px solid;
+  border-radius: 5px;
 }
-
-.nav-productos-a {
-    color: #eee;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0 15px;
-    display: block;
-    padding: 15px;
+.nav-productos a {
+  color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 15px;
+  display: block;
+  padding: 15px;
 }
-
-.nav-productos-a:hover {
-    color: #9e13ee;
-    text-decoration: underline;
+.nav-productos a:hover {
+  color: #9e13ee;
+  text-decoration: underline;
 }
 
 .item-producto-name {
-    text-align: start;
-    font-size: 16px;
-    margin: 5px;
-    padding: 5px;
+  text-align: start;
+  font-size: 16px;
+  margin: 5px;
+  padding: 5px;
 }
 
 label {
-    text-align: center;
-    padding: 5px;
+  text-align: center;
+  padding: 5px;
 }
 
- .item-producto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 10px;
- }
+.item-producto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+}
+.item-producto img {
+  width: 300px;
+  height: 300px;
+  border: #eee 1px solid;
+  border-radius: 5px;
+  margin: 20px;
+}
 
- .item-producto img {
-    width: 300px;
-    height: 300x;
-    border: #eee 1px solid;
-    border-radius: 5px;
- }
+@media (max-width: 450px) {
+  .item-producto {
+    justify-content: center;
+  }
+}
+/* contenido de sobre nosotros */
+.sobreNosotros-content {
+  border: #9e13ee 1px solid;
+  border-radius: 5px;
+  margin: 5px;
+}
+.sobreNosotros-content h2 {
+  color: #9e13ee;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: 20px;
+}
+.sobreNosotros-content p {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.sobreNosotros-content h3 {
+  color: #9e13ee;
+  text-align: center;
+}
 
- @media(max-width: 450px) {
-    .item-producto {
-        justify-content: center;
-    }
- }
+/* contenido de contacto */
+.contact-subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.contact-form {
+  border: #9e13ee 1px solid;
+  border-radius: 5px;
+  margin: 5px;
+}
+.contact-form div {
+  margin: 5px;
+}
+
+.enviar-button {
+  background-color: #9e13ee;
+  color: #eee;
+  border-color: #9e13ee;
+  text-transform: uppercase;
+}
+
+/* contenido de opiniones*/
+.opiniones-subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.opiniones-card {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
+}
+.opiniones-card div {
+  margin: 20px;
+}
+
+.opiniones-form {
+  margin: 5px;
+}
 
 /* footer general */
 footer {
-    text-align: center;
-    margin: 25px;
+  text-align: center;
+  margin: 25px;
 }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,12 @@
+// BASE
+@use "./partials/base/reset";
+@use "./partials/base/bodyGeneral";
+
+//COMPONENTS
+@use "./components/inicio";
+@use "./components/navbar";
+@use "./components/productos";
+@use "./components/sobreNosotros";
+@use "./components/contacto";
+@use "./components/opiniones";
+@use "./components/footer";

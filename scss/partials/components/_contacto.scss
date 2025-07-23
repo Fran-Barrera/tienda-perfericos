@@ -1,0 +1,24 @@
+@use "../utilities/variables";
+/* contenido de contacto */
+
+.contact-subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.contact-form {
+    border: variables.$principal-color 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+    div {
+        margin: 5px;
+    }
+}
+
+.enviar-button {
+    background-color: variables.$principal-color;
+    color: #eee;
+    border-color: variables.$principal-color;
+    text-transform: uppercase;
+}

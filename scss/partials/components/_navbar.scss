@@ -1,0 +1,38 @@
+@use "../utilities/variables";
+/* contenido barra de navegacion */
+
+.nav-icon {
+    color: #eee;
+    font-size: 32px;
+    border: variables.$principal-color 1px solid;
+    padding: 0 15px;
+    border-radius: 5px;
+    &:hover {
+        color: #eee;
+        background-color: variables.$principal-color;
+    }
+}
+
+.nav-propio {
+    background-color: #111;
+    li a {
+        color: variables.$principal-color;
+        margin: 0 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            color: #eee;
+            border: #eee 1px solid;
+            border-radius: 5px;
+        }
+    }
+}
+
+.button-propio {
+    color: #eee;
+    border-color: #eee;
+    &:hover {
+        background-color: variables.$principal-color;
+        border-color: #251552;
+    }
+}

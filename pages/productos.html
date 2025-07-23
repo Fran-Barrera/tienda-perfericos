@@ -1,126 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../styles.css" />
-    <title>Productos</title>
-  </head>
-  <body>
 
-    <header>
-      <h1>Tienda x</h1>
-      <nav class="navbar navbar-expand-lg nav-propio">
-        <div class="container-fluid">
-          <a class="navbar-brand nav-icon" href="../index.html">X</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
-              <li class="nav-item"><a class="nav-link" href="./sobreNosotros.html">Sobre nosotros</a></li>
-              <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-              <li class="nav-item"><a class="nav-link" href="./opiniones.html">Opiniones</a></li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-              <button class="btn btn-outline-success button-propio" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <title>Productos</title>
+</head>
 
-    <main>
-      <h2 class="h2-productos">Categorias</h2>
-      <ul class="nav-productos">
-        <li><a class="nav-productos-a" href="#mouse">Mouse</a></li>
-        <li><a class="nav-productos-a" href="#teclado">Teclado</a></li>
-        <li><a class="nav-productos-a" href="#mousepad">Mousepad</a></li>
-      </ul>
+<body>
 
-      <h3 class="subtitulos-categorias" id="mouse">Mouse</h3>
-
-      <div class="item-producto">
-        <div>
-          <label for="">
-            <h4 class="item-producto-name">VXE R1</h4>
-            <img src="../assets/mouse1.webp" alt="" />
-          </label>
-        </div>
-
-        <div>
-          <label for="">
-            <h4 class="item-producto-name">Scyrox V8</h4>
-            <img src="../assets/mouse2.webp" alt="" />
-          </label>
-        </div>
-
-        <div>
-          <label for="">
-            <h4 class="item-producto-name">WLMouse Beast X PRO</h4>
-            <img src="../assets/mouse3.webp" alt="" />
-          </label>
+  <header>
+    <h1>Tienda x</h1>
+    <nav class="navbar navbar-expand-lg nav-propio">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-icon" href="../index.html">X</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sobreNosotros.html">Sobre nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="./opiniones.html">Opiniones</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+            <button class="btn btn-outline-success button-propio" type="submit">Buscar</button>
+          </form>
         </div>
       </div>
+    </nav>
+  </header>
 
-      <h3 class="subtitulos-categorias" id="teclado">Teclado</h3>
+  <main>
+    <h2 class="h2-productos">Categorias</h2>
+    <ul class="nav-productos">
+      <li><a class="nav-productos-a" href="#mouse">Mouse</a></li>
+      <li><a class="nav-productos-a" href="#teclado">Teclado</a></li>
+      <li><a class="nav-productos-a" href="#mousepad">Mousepad</a></li>
+    </ul>
 
-      <div class="item-producto">
-        <div>
-          <label for="">
-            <h4 class="item-producto-name">Madlions Mad68</h4>
-            <img src="../assets/teclado1.webp" alt="" />
-          </label>
-        </div>
+    <h3 class="subtitulos-categorias" id="mouse">Mouse</h3>
 
-        <div>
-          <label for="">
-            <h4 class="item-producto-name">ATK RS7 Pro</h4>
-            <img src="../assets/teclado2.webp" alt="" />
-          </label>
-        </div>
-
-        <div>
-          <label for="">
-            <h4 class="item-producto-name">Ajazz AK820 Pro</h4>
-            <img src="../assets/teclado3.webp" alt="" />
-          </label>
-        </div>
+    <div class="item-producto">
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">VXE R1</h4>
+          <img src="../assets/mouse1.webp" alt="" />
+        </label>
       </div>
 
-      <h3 class="subtitulos-categorias" id="mousepad">Mousepad</h3>
-
-      <div class="item-producto">
-        <div>
-          <label for="">
-            <h4 class="item-producto-name">D-Glow YAN 岩</h4>
-            <img src="../assets/mousepad1.webp" alt="" />
-          </label>
-        </div>
-
-        <div>
-          <label for="">
-            <h4 class="item-producto-name">Scyrox Tornado</h4>
-            <img src="../assets/mousepad2.webp" alt="" />
-          </label>
-        </div>
-
-        <div>
-          <label for="">
-            <h4 class="item-producto-name">D-Glow YING 影 GLASSPAD</h4>
-            <img src="../assets/mousepad3.webp" alt="" />
-          </label>
-        </div>
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">Scyrox V8</h4>
+          <img src="../assets/mouse2.webp" alt="" />
+        </label>
       </div>
-    </main>
 
-    <footer>
-      <p>@mi primer pagina web 2025</p>
-    </footer>
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">WLMouse Beast X PRO</h4>
+          <img src="../assets/mouse3.webp" alt="" />
+        </label>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  </body>
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">WLMouse Beast X Tempered</h4>
+          <img src="../assets/mouse4.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">MCHOSE AX5 V2</h4>
+          <img src="../assets/mouse5.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">WLMouse Ying</h4>
+          <img src="../assets/mouse6.webp" alt="" />
+        </label>
+      </div>
+    </div>
+
+    <h3 class="subtitulos-categorias" id="teclado">Teclado</h3>
+
+    <div class="item-producto">
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">Madlions Mad68</h4>
+          <img src="../assets/teclado1.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">ATK RS7 Pro</h4>
+          <img src="../assets/teclado2.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">Ajazz AK820 Pro</h4>
+          <img src="../assets/teclado3.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">IXY Polar75 Ace</h4>
+          <img src="../assets/teclado4.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">Everglide SU75</h4>
+          <img src="../assets/teclado5.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">VGN Neon 75</h4>
+          <img src="../assets/teclado6.webp" alt="" />
+        </label>
+      </div>
+    </div>
+
+    <h3 class="subtitulos-categorias" id="mousepad">Mousepad</h3>
+
+    <div class="item-producto">
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">D-Glow YAN 岩</h4>
+          <img src="../assets/mousepad1.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">Scyrox Tornado</h4>
+          <img src="../assets/mousepad2.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">D-Glow YING 影 GLASSPAD</h4>
+          <img src="../assets/mousepad3.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">Scyrox Kumo</h4>
+          <img src="../assets/mousepad4.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">Aqua Control Pro</h4>
+          <img src="../assets/mousepad5.webp" alt="" />
+        </label>
+      </div>
+
+      <div data-aos="fade-up">
+        <label for="">
+          <h4 class="item-producto-name">Aqua Control+</h4>
+          <img src="../assets/mousepad6.webp" alt="" />
+        </label>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>@mi primer pagina web 2025</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,0 +1,21 @@
+/* contenido de opiniones*/
+
+.opiniones-subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.opiniones-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    div {
+        margin: 20px;
+    }
+}
+
+.opiniones-form {
+    margin: 5px;
+}
