@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+@import "../utilities/mixins";
 /* contenido de opiniones*/
 
 .opiniones-subtitle {
@@ -6,14 +8,24 @@
     margin: 20px;
 }
 
+.opiniones-content {
+    padding: 20px 0;
+    background: url(./assets/bg-dos.webp) center / cover;
+}
+
 .opiniones-card {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    justify-content: center;
+    @include flex(wrap, center, 20px);
+
     div {
         margin: 20px;
     }
+}
+
+.form-subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: variables.$transtparent-dark-color;
+    padding: 10px;
 }
 
 .opiniones-form {

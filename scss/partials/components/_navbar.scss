@@ -2,35 +2,41 @@
 /* contenido barra de navegacion */
 
 .nav-icon {
-    color: #eee;
+    color: variables.$light-color;
+    margin: 5px;
     font-size: 32px;
     border: variables.$principal-color 1px solid;
     padding: 0 15px;
     border-radius: 5px;
+
     &:hover {
-        color: #eee;
+        color: variables.$light-color;
         background-color: variables.$principal-color;
     }
 }
 
 .nav-propio {
-    background-color: #111;
+    background-color: variables.$dark-color;
+    margin: 20px;
+
     li a {
         color: variables.$principal-color;
-        margin: 0 5px;
+        margin: 5px;
         text-decoration: none;
         text-transform: uppercase;
+
         &:hover {
-            color: #eee;
-            border: #eee 1px solid;
+            color: variables.$light-color;
+            border: variables.$light-color 1px solid;
             border-radius: 5px;
         }
     }
 }
 
 .button-propio {
-    color: #eee;
-    border-color: #eee;
+    color: variables.$light-color;
+    border-color: variables.$light-color;
+
     &:hover {
         background-color: variables.$principal-color;
         border-color: #251552;

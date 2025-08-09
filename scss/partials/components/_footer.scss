@@ -1,6 +1,23 @@
+@use "../utilities/variables";
 /* footer general */
 
-footer {
-    text-align: center;
-    margin: 25px;
+.footer-content {
+  padding: 15px 0;
+  text-align: center;
+
+  div {
+    a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: variables.$light-color;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.footer-p {
+  margin-top: 10px;
 }

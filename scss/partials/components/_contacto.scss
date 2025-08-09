@@ -4,21 +4,32 @@
 .contact-subtitle {
     text-align: center;
     text-transform: uppercase;
-    margin: 20px;
+    margin: 30px;
 }
 
 .contact-form {
-    border: variables.$principal-color 1px solid;
-    border-radius: 5px;
-    margin: 5px;
+    padding: 20px 0;
+    background: url(./assets/bg-dos.webp) center / cover;
+
     div {
-        margin: 5px;
+        background-color: variables.$transtparent-dark-color;
+        border-radius: 5px;
+        margin: 30px 0;
+
+        label {
+            text-transform: uppercase;
+            padding: 10px;
+        }
     }
 }
 
 .enviar-button {
     background-color: variables.$principal-color;
-    color: #eee;
+    color: variables.$light-color;
     border-color: variables.$principal-color;
     text-transform: uppercase;
+
+    &:hover {
+        background-color: variables.$hover-button-color;
+    }
 }
